@@ -1,0 +1,8 @@
+{
+  "label": "Module 2 – The Digital Twin (Gazebo & Unity)",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Understanding digital twin concepts, physics simulation with Gazebo, virtual environments with Unity, and sensor modeling for robotics applications."
+  }
+}

@@ -1,0 +1,141 @@
+openapi: 3.0.0
+info:
+  title: ROS 2 Course Content API
+  description: API for accessing and querying ROS 2 course module content for the RAG chatbot
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/v1
+    description: Production server
+  - url: https://staging-api.example.com/v1
+    description: Staging server
+
+paths:
+  /modules/ros2-course-module/chapters:
+    get:
+      summary: Get all chapters in the ROS 2 course module
+      description: Retrieve a list of all chapters in Module 1 - The Robotic Nervous System (ROS 2)
+      responses:
+        '200':
+          description: A list of chapters
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  chapters:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Chapter'
+        '404':
+          description: Module not found
+
+  /modules/ros2-course-module/chapters/{chapterId}:
+    get:
+      summary: Get a specific chapter
+      description: Retrieve content of a specific chapter by ID
+      parameters:
+        - name: chapterId
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [01-introduction-to-ros2, 02-nodes-topics-services, 03-python-agents-with-rclpy, 04-humanoid-urdf-basics]
+          description: The ID of the chapter to retrieve
+      responses:
+        '200':
+          description: Chapter content
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Chapter'
+        '404':
+          description: Chapter not found
+
+  /modules/ros2-course-module/search:
+    post:
+      summary: Search within the ROS 2 course module
+      description: Search for specific content within the ROS 2 course module
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  description: Search query
+                  example: "What is a ROS 2 node?"
+                maxResults:
+                  type: integer
+                  description: Maximum number of results to return
+                  default: 5
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SearchResult'
+                  query:
+                    type: string
+                    description: The original search query
+                  totalResults:
+                    type: integer
+                    description: Total number of results found
+
+components:
+  schemas:
+    Chapter:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the chapter
+        title:
+          type: string
+          description: Title of the chapter
+        content:
+          type: string
+          description: The full content of the chapter in Markdown format
+        position:
+          type: integer
+          description: Position in the module sequence
+        learningObjectives:
+          type: array
+          items:
+            type: string
+          description: List of learning objectives for this chapter
+        keywords:
+          type: array
+          items:
+            type: string
+          description: Keywords associated with this chapter
+
+    SearchResult:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the result
+        title:
+          type: string
+          description: Title of the section/chapter
+        content:
+          type: string
+          description: The relevant content snippet
+        sourceUrl:
+          type: string
+          description: URL to the full content
+        chapterId:
+          type: string
+          description: The chapter this content belongs to
+        score:
+          type: number
+          format: float
+          description: Relevance score of the result
