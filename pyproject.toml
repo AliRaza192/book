@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-embeddings-generator"
+version = "0.1.0"
+description = "RAG Chatbot Embeddings Generation and Vector Database Storage System"
+authors = [{name = "Developer", email = "dev@example.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.40.0",
+    "cohere>=4.0.0",
+    "qdrant-client>=1.7.0",
+    "python-dotenv>=1.0.0",
+    "langchain-text-splitters>=0.0.1",
+    "beautifulsoup4>=4.12.0",
+    "requests>=2.31.0",
+    "tiktoken>=0.5.0",
+    "pytest>=7.4.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "isort>=5.12.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-ra -q"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests"
+]
