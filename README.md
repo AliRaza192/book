@@ -129,6 +129,60 @@ Or run the basic tests directly:
 python tests/test_main.py
 ```
 
+## RAG Retrieval Testing
+
+The system includes a comprehensive testing and validation framework for the RAG retrieval pipeline. This framework validates that embeddings in the Qdrant vector database work correctly for semantic search by querying with test questions, retrieving relevant content chunks, and measuring retrieval accuracy.
+
+### Running Retrieval Tests
+
+To run the retrieval tests:
+
+```bash
+python backend/retrieval_test.py
+```
+
+This will execute a comprehensive test suite with various query types (factual, conceptual, code-based) and generate detailed reports on retrieval accuracy, performance metrics, and system reliability.
+
+### Running in Test Mode (Without Qdrant)
+
+To run the retrieval tests in test mode without connecting to Qdrant (uses mock results for testing):
+
+```bash
+python backend/retrieval_test.py --test-mode
+```
+
+This mode is useful for testing the retrieval pipeline without requiring an active Qdrant connection. It simulates the retrieval process and generates mock results for validation.
+
+### Retrieval Test Configuration
+
+The system uses the following test configuration parameters (set in `.env`):
+
+- `TOP_K`: Number of top results to retrieve (default: 5)
+- `SIMILARITY_THRESHOLD`: Minimum similarity score threshold (default: 0.7)
+
+### Test Queries Dataset
+
+The system uses a dataset of 50+ test queries in `backend/test_queries.json` covering:
+
+- **Factual queries**: Direct fact-based questions
+- **Conceptual queries**: Abstract concept-based questions
+- **Code-based queries**: Programming/code-related questions
+- **Module-specific queries**: Questions specific to different modules in the documentation
+
+### Evaluation Metrics
+
+The system calculates the following metrics for each query:
+
+- **Mean Reciprocal Rank (MRR)**: Measures ranking quality
+- **Precision@K**: Measures precision of top-K results
+- **Recall@K**: Measures recall of top-K results
+- **Query Latency**: Measures response time for each query
+- **Overall Accuracy**: Proportion of queries with relevant results
+
+### Test Reports
+
+Detailed test reports are saved to `backend/results/retrieval_report.json` with comprehensive metrics and analysis. The system aims for ≥80% accuracy in retrieval tasks.
+
 ## Installation Verification
 
 Before running the main pipeline, verify your installation with the verification script:

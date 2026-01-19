@@ -1,0 +1,444 @@
+{
+  "queries": [
+    {
+      "id": "q001",
+      "query": "What are the core principles of Spec-Driven Development?",
+      "expected_keywords": ["spec-first", "accuracy", "determinism", "separation of concerns"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "general"
+    },
+    {
+      "id": "q002",
+      "query": "Explain the concept of RAG in the context of LLMs.",
+      "expected_keywords": ["retrieval augmented generation", "external knowledge", "semantic search"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "rag"
+    },
+    {
+      "id": "q003",
+      "query": "How do you define a P1 priority user story in a specification?",
+      "expected_keywords": ["critical", "blocking", "core functionality"],
+      "category": "factual",
+      "difficulty": "easy",
+      "module": "spec-kit"
+    },
+    {
+      "id": "q004",
+      "query": "What is the purpose of a .gitignore file?",
+      "expected_keywords": ["untracked files", "version control", "exclude"],
+      "category": "factual",
+      "difficulty": "easy",
+      "module": "git"
+    },
+    {
+      "id": "q005",
+      "query": "Describe the main components of a Python `pyproject.toml` file.",
+      "expected_keywords": ["build-system", "project", "dependencies", "tool"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "python"
+    },
+    {
+      "id": "q006",
+      "query": "What is cosine similarity and how is it used in vector search?",
+      "expected_keywords": ["vector space", "angle", "similarity score", "distance"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "qdrant"
+    },
+    {
+      "id": "q007",
+      "query": "Discuss the trade-offs between different vector database indexing strategies.",
+      "expected_keywords": ["HNSW", "IVF", "quantization", "recall", "latency"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "qdrant"
+    },
+    {
+      "id": "q008",
+      "query": "How does `python-dotenv` help manage environment variables in a Python project?",
+      "expected_keywords": ["environment variables", ".env file", "security", "configuration"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "python"
+    },
+    {
+      "id": "q009",
+      "query": "Explain the concept of prompt engineering for large language models.",
+      "expected_keywords": ["instruction tuning", "few-shot", "zero-shot", "model behavior"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "llm"
+    },
+    {
+      "id": "q010",
+      "query": "What are the key differences between `pip install` and `poetry add`?",
+      "expected_keywords": ["dependency management", "virtual environment", "lock file"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "python"
+    },
+    {
+      "id": "q011",
+      "query": "Provide a Python code snippet to initialize a Cohere client.",
+      "expected_keywords": ["cohere.Client", "api_key"],
+      "category": "code",
+      "difficulty": "easy",
+      "module": "cohere"
+    },
+    {
+      "id": "q012",
+      "query": "Show an example of using `qdrant-client` to perform a vector search.",
+      "expected_keywords": ["QdrantClient", "search", "collection_name", "query_vector"],
+      "category": "code",
+      "difficulty": "medium",
+      "module": "qdrant"
+    },
+    {
+      "id": "q013",
+      "query": "Write a Python function to load environment variables using `python-dotenv`.",
+      "expected_keywords": ["load_dotenv", "os.getenv"],
+      "category": "code",
+      "difficulty": "easy",
+      "module": "python"
+    },
+    {
+      "id": "q014",
+      "query": "How do you define dependencies in a `pyproject.toml` file?",
+      "expected_keywords": ["[project]", "dependencies", "version specifiers"],
+      "category": "code",
+      "difficulty": "medium",
+      "module": "python"
+    },
+    {
+      "id": "q015",
+      "query": "Give an example of a `pytest` test for a Python function.",
+      "expected_keywords": ["def test_", "assert", "fixture"],
+      "category": "code",
+      "difficulty": "easy",
+      "module": "python"
+    },
+    {
+      "id": "q016",
+      "query": "In the 'Embedding Generation' module, what is the role of `tiktoken`?",
+      "expected_keywords": ["tokenization", "chunking", "text splitting"],
+      "category": "module-specific",
+      "difficulty": "medium",
+      "module": "embedding-generation"
+    },
+    {
+      "id": "q017",
+      "query": "According to the 'RAG Chatbot Standards' module, what is the refusal behavior?",
+      "expected_keywords": ["refusal behavior", "not in source material", "external knowledge"],
+      "category": "module-specific",
+      "difficulty": "medium",
+      "module": "chatbot-standards"
+    },
+    {
+      "id": "q018",
+      "query": "In the 'Book Architecture' module, what framework is used for documentation?",
+      "expected_keywords": ["Docusaurus", "GitHub Pages"],
+      "category": "module-specific",
+      "difficulty": "easy",
+      "module": "book-architecture"
+    },
+    {
+      "id": "q019",
+      "query": "Within the 'Data Management' module (related to Spec-1), how is schema evolution handled?",
+      "expected_keywords": ["schema evolution", "migration", "rollback"],
+      "category": "module-specific",
+      "difficulty": "hard",
+      "module": "data-management"
+    },
+    {
+      "id": "q020",
+      "query": "From the 'Operational Readiness' module, what are the key aspects of observability?",
+      "expected_keywords": ["logs", "metrics", "traces", "alerting"],
+      "category": "module-specific",
+      "difficulty": "medium",
+      "module": "operational-readiness"
+    },
+    {
+      "id": "q021",
+      "query": "What is the expected output format for evaluation reports as per the API contract?",
+      "expected_keywords": ["summary", "detailed_results", "test_metadata"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "api-contract"
+    },
+    {
+      "id": "q022",
+      "query": "How does `pandas` facilitate metrics analysis in Python?",
+      "expected_keywords": ["DataFrame", "data manipulation", "statistical analysis"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "pandas"
+    },
+    {
+      "id": "q023",
+      "query": "What are the advantages of using Cohere's embed-english-v3.0 model for text embeddings?",
+      "expected_keywords": ["multilingual", "performance", "accuracy", "size"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "cohere"
+    },
+    {
+      "id": "q024",
+      "query": "Compare the performance characteristics of different embedding models available in Cohere.",
+      "expected_keywords": ["speed", "accuracy", "size", "cost"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "cohere"
+    },
+    {
+      "id": "q025",
+      "query": "How do you handle API rate limiting when making calls to Cohere's embedding service?",
+      "expected_keywords": ["rate limiting", "exponential backoff", "batching", "retry logic"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "cohere"
+    },
+    {
+      "id": "q026",
+      "query": "What are the main differences between Qdrant and other vector databases like Pinecone or Weaviate?",
+      "expected_keywords": ["open-source", "performance", "features", "pricing"],
+      "category": "factual",
+      "difficulty": "hard",
+      "module": "qdrant"
+    },
+    {
+      "id": "q027",
+      "query": "Explain how HNSW (Hierarchical Navigable Small World) graphs improve vector search performance.",
+      "expected_keywords": ["approximate nearest neighbor", "graph traversal", "indexing", "recall"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "qdrant"
+    },
+    {
+      "id": "q028",
+      "query": "Write a Python function to connect to Qdrant Cloud using the Python client.",
+      "expected_keywords": ["QdrantClient", "url", "api_key", "host"],
+      "category": "code",
+      "difficulty": "medium",
+      "module": "qdrant"
+    },
+    {
+      "id": "q029",
+      "query": "Implement a Python function that creates a collection in Qdrant with specific vector dimensions.",
+      "expected_keywords": ["create_collection", "vector_size", "distance", "config"],
+      "category": "code",
+      "difficulty": "hard",
+      "module": "qdrant"
+    },
+    {
+      "id": "q030",
+      "query": "Show how to use LangChain's RecursiveCharacterTextSplitter for document chunking.",
+      "expected_keywords": ["RecursiveCharacterTextSplitter", "chunk_size", "chunk_overlap", "separators"],
+      "category": "code",
+      "difficulty": "medium",
+      "module": "langchain"
+    },
+    {
+      "id": "q031",
+      "query": "What is the optimal chunk size for RAG systems and why?",
+      "expected_keywords": ["context window", "semantic coherence", "information density", "performance"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "rag"
+    },
+    {
+      "id": "q032",
+      "query": "How do you evaluate the quality of retrieved documents in a RAG system?",
+      "expected_keywords": ["relevance", "accuracy", "MRR", "precision", "recall"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "rag"
+    },
+    {
+      "id": "q033",
+      "query": "Explain the difference between semantic search and keyword-based search.",
+      "expected_keywords": ["meaning", "context", "vector embeddings", "understanding"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "search"
+    },
+    {
+      "id": "q034",
+      "query": "What is the purpose of chunk overlap in document processing?",
+      "expected_keywords": ["context continuity", "boundary issues", "semantic coherence", "information preservation"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "document-processing"
+    },
+    {
+      "id": "q035",
+      "query": "How does Playwright differ from Selenium for web scraping?",
+      "expected_keywords": ["JavaScript rendering", "async support", "browser automation", "reliability"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "web-scraping"
+    },
+    {
+      "id": "q036",
+      "query": "Write a Python function that uses Playwright to scrape content from a dynamic website.",
+      "expected_keywords": ["async", "page.goto", "page.content", "wait_for_load_state"],
+      "category": "code",
+      "difficulty": "hard",
+      "module": "web-scraping"
+    },
+    {
+      "id": "q037",
+      "query": "What are the benefits of using poetry over pip for dependency management?",
+      "expected_keywords": ["lock files", "virtual environments", "dependency resolution", "reproducibility"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "python"
+    },
+    {
+      "id": "q038",
+      "query": "Explain how to implement retry logic with exponential backoff in Python.",
+      "expected_keywords": ["decorator", "time.sleep", "exception handling", "jitter"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "python"
+    },
+    {
+      "id": "q039",
+      "query": "How do you implement a batch processing system in Python?",
+      "expected_keywords": ["chunking", "generators", "concurrency", "memory management"],
+      "category": "code",
+      "difficulty": "hard",
+      "module": "python"
+    },
+    {
+      "id": "q040",
+      "query": "What are the best practices for securing API keys in Python applications?",
+      "expected_keywords": ["environment variables", "encryption", "secrets management", "least privilege"],
+      "category": "factual",
+      "difficulty": "medium",
+      "module": "security"
+    },
+    {
+      "id": "q041",
+      "query": "In the 'ROS2 Course Module', what is the purpose of the launch system?",
+      "expected_keywords": ["launch files", "node composition", "system orchestration", "parameter management"],
+      "category": "module-specific",
+      "difficulty": "medium",
+      "module": "ros2-course-module"
+    },
+    {
+      "id": "q042",
+      "query": "According to the 'Documentation Standards' module, what makes effective technical documentation?",
+      "expected_keywords": ["audience", "clarity", "examples", "maintenance"],
+      "category": "module-specific",
+      "difficulty": "medium",
+      "module": "documentation-standards"
+    },
+    {
+      "id": "q043",
+      "query": "In the 'System Architecture' module, how is microservice communication typically handled?",
+      "expected_keywords": ["REST APIs", "message queues", "gRPC", "event streaming"],
+      "category": "module-specific",
+      "difficulty": "medium",
+      "module": "system-architecture"
+    },
+    {
+      "id": "q044",
+      "query": "Within the 'Testing Framework' module, what are the key components of a comprehensive test strategy?",
+      "expected_keywords": ["unit tests", "integration tests", "end-to-end tests", "performance tests"],
+      "category": "module-specific",
+      "difficulty": "hard",
+      "module": "testing-framework"
+    },
+    {
+      "id": "q045",
+      "query": "From the 'Performance Optimization' module, what are the most common bottlenecks in RAG systems?",
+      "expected_keywords": ["embedding generation", "vector search", "network latency", "memory usage"],
+      "category": "module-specific",
+      "difficulty": "hard",
+      "module": "performance-optimization"
+    },
+    {
+      "id": "q046",
+      "query": "What are the key considerations for deploying RAG systems in production?",
+      "expected_keywords": ["scalability", "monitoring", "caching", "error handling"],
+      "category": "factual",
+      "difficulty": "hard",
+      "module": "production-deployment"
+    },
+    {
+      "id": "q047",
+      "query": "How do you measure the effectiveness of a RAG system compared to a traditional retrieval system?",
+      "expected_keywords": ["accuracy", "latency", "user satisfaction", "coverage"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "evaluation"
+    },
+    {
+      "id": "q048",
+      "query": "Implement a function to calculate the Mean Reciprocal Rank (MRR) for evaluation metrics.",
+      "expected_keywords": ["reciprocal rank", "first relevant", "ranking evaluation", "mean"],
+      "category": "code",
+      "difficulty": "medium",
+      "module": "evaluation-metrics"
+    },
+    {
+      "id": "q049",
+      "query": "Write a Python function to calculate Precision@K and Recall@K metrics.",
+      "expected_keywords": ["precision", "recall", "top-k", "relevant documents"],
+      "category": "code",
+      "difficulty": "medium",
+      "module": "evaluation-metrics"
+    },
+    {
+      "id": "q050",
+      "query": "What factors influence the choice of K in Precision@K and Recall@K metrics?",
+      "expected_keywords": ["use case", "application requirements", "user behavior", "trade-offs"],
+      "category": "conceptual",
+      "difficulty": "medium",
+      "module": "evaluation-metrics"
+    },
+    {
+      "id": "q051",
+      "query": "Explain how to implement a comprehensive logging system in Python for debugging.",
+      "expected_keywords": ["logging levels", "handlers", "formatters", "structured logging"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "debugging-tools"
+    },
+    {
+      "id": "q052",
+      "query": "What are the key differences between various vector similarity measures?",
+      "expected_keywords": ["cosine similarity", "euclidean distance", "dot product", "manhattan distance"],
+      "category": "factual",
+      "difficulty": "hard",
+      "module": "mathematics"
+    },
+    {
+      "id": "q053",
+      "query": "How do you optimize the TOP_K parameter for different types of queries?",
+      "expected_keywords": ["query type", "precision vs recall", "latency", "relevance"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "optimization"
+    },
+    {
+      "id": "q054",
+      "query": "What is the impact of similarity threshold on retrieval performance?",
+      "expected_keywords": ["precision", "recall", "false positives", "false negatives"],
+      "category": "conceptual",
+      "difficulty": "hard",
+      "module": "optimization"
+    },
+    {
+      "id": "q055",
+      "query": "Write a Python script to run batch retrieval tests and generate performance reports.",
+      "expected_keywords": ["batch processing", "timing", "metrics aggregation", "report generation"],
+      "category": "code",
+      "difficulty": "hard",
+      "module": "testing-tools"
+    }
+  ]
+}

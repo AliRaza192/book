@@ -212,6 +212,8 @@ See `.specify/memory/constitution.md` for code quality, testing, performance, se
 ## Active Technologies
 - Markdown (for documentation), Python 3.8+ (for ROS 2 concepts referenced) + Docusaurus documentation framework, ROS 2 (Humble Hawksbill or later) (001-ros2-course-module)
 - File-based (Markdown documentation files) (001-ros2-course-module)
+- Python 3.10+ + cohere, qdrant-client, python-dotenv, pandas (001-rag-retrieval-testing)
+- Qdrant vector database (existing from Spec-1) (001-rag-retrieval-testing)
 
 ## Recent Changes
 - 001-ros2-course-module: Added Markdown (for documentation), Python 3.8+ (for ROS 2 concepts referenced) + Docusaurus documentation framework, ROS 2 (Humble Hawksbill or later)

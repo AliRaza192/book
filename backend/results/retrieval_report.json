@@ -1,0 +1,28 @@
+[
+  {
+    "query_id": "test_001",
+    "query_text": "What is Python?",
+    "category": "factual",
+    "difficulty": "easy",
+    "results": [
+      {
+        "chunk_id": "test_chunk",
+        "content": "Python is a programming language",
+        "score": 0.9,
+        "source_url": "http://example.com",
+        "title": "Python Intro",
+        "module": "python_basics",
+        "position": 1
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 0.04100799560546875,
+    "expected_keywords": [
+      "programming language"
+    ]
+  }
+]
