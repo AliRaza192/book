@@ -1,28 +1,3562 @@
 [
   {
-    "query_id": "test_001",
-    "query_text": "What is Python?",
+    "query_id": "q001",
+    "query_text": "What are the core principles of Spec-Driven Development?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_0_0",
+        "content": "This is a mock result 1 for query 'What are the core pr...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_0_0",
+        "title": "Mock Document 0-0",
+        "module": "general",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_0_1",
+        "content": "This is a mock result 2 for query 'What are the core pr...' containing some relevant content. spec-first",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_0_1",
+        "title": "Mock Document 0-1",
+        "module": "general",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_0_2",
+        "content": "This is a mock result 3 for query 'What are the core pr...' containing some relevant content. spec-first",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_0_2",
+        "title": "Mock Document 0-2",
+        "module": "general",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_0_3",
+        "content": "This is a mock result 4 for query 'What are the core pr...' containing some relevant content. spec-first",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_0_3",
+        "title": "Mock Document 0-3",
+        "module": "general",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_0_4",
+        "content": "This is a mock result 5 for query 'What are the core pr...' containing some relevant content. spec-first",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_0_4",
+        "title": "Mock Document 0-4",
+        "module": "general",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 558.5401058197021,
+    "expected_keywords": [
+      "spec-first",
+      "accuracy",
+      "determinism",
+      "separation of concerns"
+    ]
+  },
+  {
+    "query_id": "q002",
+    "query_text": "Explain the concept of RAG in the context of LLMs.",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_1_0",
+        "content": "This is a mock result 1 for query 'Explain the concept ...' containing some relevant content. retrieval augmented generation",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_1_0",
+        "title": "Mock Document 1-0",
+        "module": "rag",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_1_1",
+        "content": "This is a mock result 2 for query 'Explain the concept ...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_1_1",
+        "title": "Mock Document 1-1",
+        "module": "rag",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_1_2",
+        "content": "This is a mock result 3 for query 'Explain the concept ...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_1_2",
+        "title": "Mock Document 1-2",
+        "module": "rag",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_1_3",
+        "content": "This is a mock result 4 for query 'Explain the concept ...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_1_3",
+        "title": "Mock Document 1-3",
+        "module": "rag",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_1_4",
+        "content": "This is a mock result 5 for query 'Explain the concept ...' containing some relevant content. retrieval augmented generation",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_1_4",
+        "title": "Mock Document 1-4",
+        "module": "rag",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.6666666666666666
+    },
+    "query_latency_ms": 277.88567543029785,
+    "expected_keywords": [
+      "retrieval augmented generation",
+      "external knowledge",
+      "semantic search"
+    ]
+  },
+  {
+    "query_id": "q003",
+    "query_text": "How do you define a P1 priority user story in a specification?",
     "category": "factual",
     "difficulty": "easy",
     "results": [
       {
-        "chunk_id": "test_chunk",
-        "content": "Python is a programming language",
+        "chunk_id": "mock_chunk_2_0",
+        "content": "This is a mock result 1 for query 'How do you define a ...' containing some relevant content. critical",
         "score": 0.9,
-        "source_url": "http://example.com",
-        "title": "Python Intro",
-        "module": "python_basics",
+        "source_url": "http://mock.example.com/doc_2_0",
+        "title": "Mock Document 2-0",
+        "module": "spec-kit",
         "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_2_1",
+        "content": "This is a mock result 2 for query 'How do you define a ...' containing some relevant content. critical",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_2_1",
+        "title": "Mock Document 2-1",
+        "module": "spec-kit",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_2_2",
+        "content": "This is a mock result 3 for query 'How do you define a ...' containing some relevant content. critical",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_2_2",
+        "title": "Mock Document 2-2",
+        "module": "spec-kit",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_2_3",
+        "content": "This is a mock result 4 for query 'How do you define a ...' containing some relevant content. critical",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_2_3",
+        "title": "Mock Document 2-3",
+        "module": "spec-kit",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_2_4",
+        "content": "This is a mock result 5 for query 'How do you define a ...' containing some relevant content. critical",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_2_4",
+        "title": "Mock Document 2-4",
+        "module": "spec-kit",
+        "position": 5
       }
     ],
     "metrics": {
       "mrr": 1.0,
       "precision_at_k": 1.0,
+      "recall_at_k": 1.6666666666666667
+    },
+    "query_latency_ms": 264.83917236328125,
+    "expected_keywords": [
+      "critical",
+      "blocking",
+      "core functionality"
+    ]
+  },
+  {
+    "query_id": "q004",
+    "query_text": "What is the purpose of a .gitignore file?",
+    "category": "factual",
+    "difficulty": "easy",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_3_0",
+        "content": "This is a mock result 1 for query 'What is the purpose ...' containing some relevant content. untracked files",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_3_0",
+        "title": "Mock Document 3-0",
+        "module": "git",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_3_1",
+        "content": "This is a mock result 2 for query 'What is the purpose ...' containing some relevant content. untracked files",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_3_1",
+        "title": "Mock Document 3-1",
+        "module": "git",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_3_2",
+        "content": "This is a mock result 3 for query 'What is the purpose ...' containing some relevant content. untracked files",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_3_2",
+        "title": "Mock Document 3-2",
+        "module": "git",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_3_3",
+        "content": "This is a mock result 4 for query 'What is the purpose ...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_3_3",
+        "title": "Mock Document 3-3",
+        "module": "git",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_3_4",
+        "content": "This is a mock result 5 for query 'What is the purpose ...' containing some relevant content. untracked files",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_3_4",
+        "title": "Mock Document 3-4",
+        "module": "git",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.3333333333333333
+    },
+    "query_latency_ms": 281.3608646392822,
+    "expected_keywords": [
+      "untracked files",
+      "version control",
+      "exclude"
+    ]
+  },
+  {
+    "query_id": "q005",
+    "query_text": "Describe the main components of a Python `pyproject.toml` file.",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_4_0",
+        "content": "This is a mock result 1 for query 'Describe the main co...' containing some relevant content. build-system",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_4_0",
+        "title": "Mock Document 4-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_4_1",
+        "content": "This is a mock result 2 for query 'Describe the main co...' containing some relevant content. build-system",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_4_1",
+        "title": "Mock Document 4-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_4_2",
+        "content": "This is a mock result 3 for query 'Describe the main co...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_4_2",
+        "title": "Mock Document 4-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_4_3",
+        "content": "This is a mock result 4 for query 'Describe the main co...' containing some relevant content. build-system",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_4_3",
+        "title": "Mock Document 4-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_4_4",
+        "content": "This is a mock result 5 for query 'Describe the main co...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_4_4",
+        "title": "Mock Document 4-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 273.2281684875488,
+    "expected_keywords": [
+      "build-system",
+      "project",
+      "dependencies",
+      "tool"
+    ]
+  },
+  {
+    "query_id": "q006",
+    "query_text": "What is cosine similarity and how is it used in vector search?",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_5_0",
+        "content": "This is a mock result 1 for query 'What is cosine simil...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_5_0",
+        "title": "Mock Document 5-0",
+        "module": "qdrant",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_5_1",
+        "content": "This is a mock result 2 for query 'What is cosine simil...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_5_1",
+        "title": "Mock Document 5-1",
+        "module": "qdrant",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_5_2",
+        "content": "This is a mock result 3 for query 'What is cosine simil...' containing some relevant content. vector space",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_5_2",
+        "title": "Mock Document 5-2",
+        "module": "qdrant",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_5_3",
+        "content": "This is a mock result 4 for query 'What is cosine simil...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_5_3",
+        "title": "Mock Document 5-3",
+        "module": "qdrant",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_5_4",
+        "content": "This is a mock result 5 for query 'What is cosine simil...' containing some relevant content. vector space",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_5_4",
+        "title": "Mock Document 5-4",
+        "module": "qdrant",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.3333333333333333,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.5
+    },
+    "query_latency_ms": 273.5450267791748,
+    "expected_keywords": [
+      "vector space",
+      "angle",
+      "similarity score",
+      "distance"
+    ]
+  },
+  {
+    "query_id": "q007",
+    "query_text": "Discuss the trade-offs between different vector database indexing strategies.",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_6_0",
+        "content": "This is a mock result 1 for query 'Discuss the trade-of...' containing some relevant content. HNSW",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_6_0",
+        "title": "Mock Document 6-0",
+        "module": "qdrant",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_6_1",
+        "content": "This is a mock result 2 for query 'Discuss the trade-of...' containing some relevant content. HNSW",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_6_1",
+        "title": "Mock Document 6-1",
+        "module": "qdrant",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_6_2",
+        "content": "This is a mock result 3 for query 'Discuss the trade-of...' containing some relevant content. HNSW",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_6_2",
+        "title": "Mock Document 6-2",
+        "module": "qdrant",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_6_3",
+        "content": "This is a mock result 4 for query 'Discuss the trade-of...' containing some relevant content. HNSW",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_6_3",
+        "title": "Mock Document 6-3",
+        "module": "qdrant",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_6_4",
+        "content": "This is a mock result 5 for query 'Discuss the trade-of...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_6_4",
+        "title": "Mock Document 6-4",
+        "module": "qdrant",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 0.8
+    },
+    "query_latency_ms": 273.5862731933594,
+    "expected_keywords": [
+      "HNSW",
+      "IVF",
+      "quantization",
+      "recall",
+      "latency"
+    ]
+  },
+  {
+    "query_id": "q008",
+    "query_text": "How does `python-dotenv` help manage environment variables in a Python project?",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_7_0",
+        "content": "This is a mock result 1 for query 'How does `python-dot...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_7_0",
+        "title": "Mock Document 7-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_7_1",
+        "content": "This is a mock result 2 for query 'How does `python-dot...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_7_1",
+        "title": "Mock Document 7-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_7_2",
+        "content": "This is a mock result 3 for query 'How does `python-dot...' containing some relevant content. environment variables",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_7_2",
+        "title": "Mock Document 7-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_7_3",
+        "content": "This is a mock result 4 for query 'How does `python-dot...' containing some relevant content. environment variables",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_7_3",
+        "title": "Mock Document 7-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_7_4",
+        "content": "This is a mock result 5 for query 'How does `python-dot...' containing some relevant content. environment variables",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_7_4",
+        "title": "Mock Document 7-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.3333333333333333,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 270.845890045166,
+    "expected_keywords": [
+      "environment variables",
+      ".env file",
+      "security",
+      "configuration"
+    ]
+  },
+  {
+    "query_id": "q009",
+    "query_text": "Explain the concept of prompt engineering for large language models.",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_8_0",
+        "content": "This is a mock result 1 for query 'Explain the concept ...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_8_0",
+        "title": "Mock Document 8-0",
+        "module": "llm",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_8_1",
+        "content": "This is a mock result 2 for query 'Explain the concept ...' containing some relevant content. instruction tuning",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_8_1",
+        "title": "Mock Document 8-1",
+        "module": "llm",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_8_2",
+        "content": "This is a mock result 3 for query 'Explain the concept ...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_8_2",
+        "title": "Mock Document 8-2",
+        "module": "llm",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_8_3",
+        "content": "This is a mock result 4 for query 'Explain the concept ...' containing some relevant content. instruction tuning",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_8_3",
+        "title": "Mock Document 8-3",
+        "module": "llm",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_8_4",
+        "content": "This is a mock result 5 for query 'Explain the concept ...' containing some relevant content. instruction tuning",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_8_4",
+        "title": "Mock Document 8-4",
+        "module": "llm",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 270.5655097961426,
+    "expected_keywords": [
+      "instruction tuning",
+      "few-shot",
+      "zero-shot",
+      "model behavior"
+    ]
+  },
+  {
+    "query_id": "q010",
+    "query_text": "What are the key differences between `pip install` and `poetry add`?",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_9_0",
+        "content": "This is a mock result 1 for query 'What are the key dif...' containing some relevant content. dependency management",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_9_0",
+        "title": "Mock Document 9-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_9_1",
+        "content": "This is a mock result 2 for query 'What are the key dif...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_9_1",
+        "title": "Mock Document 9-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_9_2",
+        "content": "This is a mock result 3 for query 'What are the key dif...' containing some relevant content. dependency management",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_9_2",
+        "title": "Mock Document 9-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_9_3",
+        "content": "This is a mock result 4 for query 'What are the key dif...' containing some relevant content. dependency management",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_9_3",
+        "title": "Mock Document 9-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_9_4",
+        "content": "This is a mock result 5 for query 'What are the key dif...' containing some relevant content. dependency management",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_9_4",
+        "title": "Mock Document 9-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.3333333333333333
+    },
+    "query_latency_ms": 272.8579044342041,
+    "expected_keywords": [
+      "dependency management",
+      "virtual environment",
+      "lock file"
+    ]
+  },
+  {
+    "query_id": "q011",
+    "query_text": "Provide a Python code snippet to initialize a Cohere client.",
+    "category": "code",
+    "difficulty": "easy",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_10_0",
+        "content": "This is a mock result 1 for query 'Provide a Python cod...' containing some relevant content. cohere.Client",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_10_0",
+        "title": "Mock Document 10-0",
+        "module": "cohere",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_10_1",
+        "content": "This is a mock result 2 for query 'Provide a Python cod...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_10_1",
+        "title": "Mock Document 10-1",
+        "module": "cohere",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_10_2",
+        "content": "This is a mock result 3 for query 'Provide a Python cod...' containing some relevant content. cohere.Client",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_10_2",
+        "title": "Mock Document 10-2",
+        "module": "cohere",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_10_3",
+        "content": "This is a mock result 4 for query 'Provide a Python cod...' containing some relevant content. cohere.Client",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_10_3",
+        "title": "Mock Document 10-3",
+        "module": "cohere",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_10_4",
+        "content": "This is a mock result 5 for query 'Provide a Python cod...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_10_4",
+        "title": "Mock Document 10-4",
+        "module": "cohere",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.5
+    },
+    "query_latency_ms": 272.1600532531738,
+    "expected_keywords": [
+      "cohere.Client",
+      "api_key"
+    ]
+  },
+  {
+    "query_id": "q012",
+    "query_text": "Show an example of using `qdrant-client` to perform a vector search.",
+    "category": "code",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_11_0",
+        "content": "This is a mock result 1 for query 'Show an example of u...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_11_0",
+        "title": "Mock Document 11-0",
+        "module": "qdrant",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_11_1",
+        "content": "This is a mock result 2 for query 'Show an example of u...' containing some relevant content. QdrantClient",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_11_1",
+        "title": "Mock Document 11-1",
+        "module": "qdrant",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_11_2",
+        "content": "This is a mock result 3 for query 'Show an example of u...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_11_2",
+        "title": "Mock Document 11-2",
+        "module": "qdrant",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_11_3",
+        "content": "This is a mock result 4 for query 'Show an example of u...' containing some relevant content. QdrantClient",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_11_3",
+        "title": "Mock Document 11-3",
+        "module": "qdrant",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_11_4",
+        "content": "This is a mock result 5 for query 'Show an example of u...' containing some relevant content. QdrantClient",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_11_4",
+        "title": "Mock Document 11-4",
+        "module": "qdrant",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 272.92442321777344,
+    "expected_keywords": [
+      "QdrantClient",
+      "search",
+      "collection_name",
+      "query_vector"
+    ]
+  },
+  {
+    "query_id": "q013",
+    "query_text": "Write a Python function to load environment variables using `python-dotenv`.",
+    "category": "code",
+    "difficulty": "easy",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_12_0",
+        "content": "This is a mock result 1 for query 'Write a Python funct...' containing some relevant content. load_dotenv",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_12_0",
+        "title": "Mock Document 12-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_12_1",
+        "content": "This is a mock result 2 for query 'Write a Python funct...' containing some relevant content. load_dotenv",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_12_1",
+        "title": "Mock Document 12-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_12_2",
+        "content": "This is a mock result 3 for query 'Write a Python funct...' containing some relevant content. load_dotenv",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_12_2",
+        "title": "Mock Document 12-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_12_3",
+        "content": "This is a mock result 4 for query 'Write a Python funct...' containing some relevant content. load_dotenv",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_12_3",
+        "title": "Mock Document 12-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_12_4",
+        "content": "This is a mock result 5 for query 'Write a Python funct...' containing some relevant content. load_dotenv",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_12_4",
+        "title": "Mock Document 12-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 2.5
+    },
+    "query_latency_ms": 266.5364742279053,
+    "expected_keywords": [
+      "load_dotenv",
+      "os.getenv"
+    ]
+  },
+  {
+    "query_id": "q014",
+    "query_text": "How do you define dependencies in a `pyproject.toml` file?",
+    "category": "code",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_13_0",
+        "content": "This is a mock result 1 for query 'How do you define de...' containing some relevant content. [project]",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_13_0",
+        "title": "Mock Document 13-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_13_1",
+        "content": "This is a mock result 2 for query 'How do you define de...' containing some relevant content. [project]",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_13_1",
+        "title": "Mock Document 13-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_13_2",
+        "content": "This is a mock result 3 for query 'How do you define de...' containing some relevant content. [project]",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_13_2",
+        "title": "Mock Document 13-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_13_3",
+        "content": "This is a mock result 4 for query 'How do you define de...' containing some relevant content. [project]",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_13_3",
+        "title": "Mock Document 13-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_13_4",
+        "content": "This is a mock result 5 for query 'How do you define de...' containing some relevant content. [project]",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_13_4",
+        "title": "Mock Document 13-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.6666666666666667
+    },
+    "query_latency_ms": 268.3148384094238,
+    "expected_keywords": [
+      "[project]",
+      "dependencies",
+      "version specifiers"
+    ]
+  },
+  {
+    "query_id": "q015",
+    "query_text": "Give an example of a `pytest` test for a Python function.",
+    "category": "code",
+    "difficulty": "easy",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_14_0",
+        "content": "This is a mock result 1 for query 'Give an example of a...' containing some relevant content. def test_",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_14_0",
+        "title": "Mock Document 14-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_14_1",
+        "content": "This is a mock result 2 for query 'Give an example of a...' containing some relevant content. def test_",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_14_1",
+        "title": "Mock Document 14-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_14_2",
+        "content": "This is a mock result 3 for query 'Give an example of a...' containing some relevant content. def test_",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_14_2",
+        "title": "Mock Document 14-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_14_3",
+        "content": "This is a mock result 4 for query 'Give an example of a...' containing some relevant content. def test_",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_14_3",
+        "title": "Mock Document 14-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_14_4",
+        "content": "This is a mock result 5 for query 'Give an example of a...' containing some relevant content. def test_",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_14_4",
+        "title": "Mock Document 14-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.6666666666666667
+    },
+    "query_latency_ms": 270.8139419555664,
+    "expected_keywords": [
+      "def test_",
+      "assert",
+      "fixture"
+    ]
+  },
+  {
+    "query_id": "q016",
+    "query_text": "In the 'Embedding Generation' module, what is the role of `tiktoken`?",
+    "category": "module-specific",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_15_0",
+        "content": "This is a mock result 1 for query 'In the 'Embedding Ge...' containing some relevant content. tokenization",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_15_0",
+        "title": "Mock Document 15-0",
+        "module": "embedding-generation",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_15_1",
+        "content": "This is a mock result 2 for query 'In the 'Embedding Ge...' containing some relevant content. tokenization",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_15_1",
+        "title": "Mock Document 15-1",
+        "module": "embedding-generation",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_15_2",
+        "content": "This is a mock result 3 for query 'In the 'Embedding Ge...' containing some relevant content. tokenization",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_15_2",
+        "title": "Mock Document 15-2",
+        "module": "embedding-generation",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_15_3",
+        "content": "This is a mock result 4 for query 'In the 'Embedding Ge...' containing some relevant content. tokenization",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_15_3",
+        "title": "Mock Document 15-3",
+        "module": "embedding-generation",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_15_4",
+        "content": "This is a mock result 5 for query 'In the 'Embedding Ge...' containing some relevant content. tokenization",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_15_4",
+        "title": "Mock Document 15-4",
+        "module": "embedding-generation",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.6666666666666667
+    },
+    "query_latency_ms": 272.2928524017334,
+    "expected_keywords": [
+      "tokenization",
+      "chunking",
+      "text splitting"
+    ]
+  },
+  {
+    "query_id": "q017",
+    "query_text": "According to the 'RAG Chatbot Standards' module, what is the refusal behavior?",
+    "category": "module-specific",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_16_0",
+        "content": "This is a mock result 1 for query 'According to the 'RA...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_16_0",
+        "title": "Mock Document 16-0",
+        "module": "chatbot-standards",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_16_1",
+        "content": "This is a mock result 2 for query 'According to the 'RA...' containing some relevant content. refusal behavior",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_16_1",
+        "title": "Mock Document 16-1",
+        "module": "chatbot-standards",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_16_2",
+        "content": "This is a mock result 3 for query 'According to the 'RA...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_16_2",
+        "title": "Mock Document 16-2",
+        "module": "chatbot-standards",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_16_3",
+        "content": "This is a mock result 4 for query 'According to the 'RA...' containing some relevant content. refusal behavior",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_16_3",
+        "title": "Mock Document 16-3",
+        "module": "chatbot-standards",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_16_4",
+        "content": "This is a mock result 5 for query 'According to the 'RA...' containing some relevant content. refusal behavior",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_16_4",
+        "title": "Mock Document 16-4",
+        "module": "chatbot-standards",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.6,
       "recall_at_k": 1.0
     },
-    "query_latency_ms": 0.04100799560546875,
+    "query_latency_ms": 263.8547420501709,
     "expected_keywords": [
-      "programming language"
+      "refusal behavior",
+      "not in source material",
+      "external knowledge"
+    ]
+  },
+  {
+    "query_id": "q018",
+    "query_text": "In the 'Book Architecture' module, what framework is used for documentation?",
+    "category": "module-specific",
+    "difficulty": "easy",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_17_0",
+        "content": "This is a mock result 1 for query 'In the 'Book Archite...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_17_0",
+        "title": "Mock Document 17-0",
+        "module": "book-architecture",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_17_1",
+        "content": "This is a mock result 2 for query 'In the 'Book Archite...' containing some relevant content. Docusaurus",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_17_1",
+        "title": "Mock Document 17-1",
+        "module": "book-architecture",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_17_2",
+        "content": "This is a mock result 3 for query 'In the 'Book Archite...' containing some relevant content. Docusaurus",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_17_2",
+        "title": "Mock Document 17-2",
+        "module": "book-architecture",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_17_3",
+        "content": "This is a mock result 4 for query 'In the 'Book Archite...' containing some relevant content. Docusaurus",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_17_3",
+        "title": "Mock Document 17-3",
+        "module": "book-architecture",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_17_4",
+        "content": "This is a mock result 5 for query 'In the 'Book Archite...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_17_4",
+        "title": "Mock Document 17-4",
+        "module": "book-architecture",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.5
+    },
+    "query_latency_ms": 273.8649845123291,
+    "expected_keywords": [
+      "Docusaurus",
+      "GitHub Pages"
+    ]
+  },
+  {
+    "query_id": "q019",
+    "query_text": "Within the 'Data Management' module (related to Spec-1), how is schema evolution handled?",
+    "category": "module-specific",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_18_0",
+        "content": "This is a mock result 1 for query 'Within the 'Data Man...' containing some relevant content. schema evolution",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_18_0",
+        "title": "Mock Document 18-0",
+        "module": "data-management",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_18_1",
+        "content": "This is a mock result 2 for query 'Within the 'Data Man...' containing some relevant content. schema evolution",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_18_1",
+        "title": "Mock Document 18-1",
+        "module": "data-management",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_18_2",
+        "content": "This is a mock result 3 for query 'Within the 'Data Man...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_18_2",
+        "title": "Mock Document 18-2",
+        "module": "data-management",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_18_3",
+        "content": "This is a mock result 4 for query 'Within the 'Data Man...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_18_3",
+        "title": "Mock Document 18-3",
+        "module": "data-management",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_18_4",
+        "content": "This is a mock result 5 for query 'Within the 'Data Man...' containing some relevant content. schema evolution",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_18_4",
+        "title": "Mock Document 18-4",
+        "module": "data-management",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 273.6527919769287,
+    "expected_keywords": [
+      "schema evolution",
+      "migration",
+      "rollback"
+    ]
+  },
+  {
+    "query_id": "q020",
+    "query_text": "From the 'Operational Readiness' module, what are the key aspects of observability?",
+    "category": "module-specific",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_19_0",
+        "content": "This is a mock result 1 for query 'From the 'Operationa...' containing some relevant content. logs",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_19_0",
+        "title": "Mock Document 19-0",
+        "module": "operational-readiness",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_19_1",
+        "content": "This is a mock result 2 for query 'From the 'Operationa...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_19_1",
+        "title": "Mock Document 19-1",
+        "module": "operational-readiness",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_19_2",
+        "content": "This is a mock result 3 for query 'From the 'Operationa...' containing some relevant content. logs",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_19_2",
+        "title": "Mock Document 19-2",
+        "module": "operational-readiness",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_19_3",
+        "content": "This is a mock result 4 for query 'From the 'Operationa...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_19_3",
+        "title": "Mock Document 19-3",
+        "module": "operational-readiness",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_19_4",
+        "content": "This is a mock result 5 for query 'From the 'Operationa...' containing some relevant content. logs",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_19_4",
+        "title": "Mock Document 19-4",
+        "module": "operational-readiness",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 271.82626724243164,
+    "expected_keywords": [
+      "logs",
+      "metrics",
+      "traces",
+      "alerting"
+    ]
+  },
+  {
+    "query_id": "q021",
+    "query_text": "What is the expected output format for evaluation reports as per the API contract?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_20_0",
+        "content": "This is a mock result 1 for query 'What is the expected...' containing some relevant content. summary",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_20_0",
+        "title": "Mock Document 20-0",
+        "module": "api-contract",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_20_1",
+        "content": "This is a mock result 2 for query 'What is the expected...' containing some relevant content. summary",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_20_1",
+        "title": "Mock Document 20-1",
+        "module": "api-contract",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_20_2",
+        "content": "This is a mock result 3 for query 'What is the expected...' containing some relevant content. summary",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_20_2",
+        "title": "Mock Document 20-2",
+        "module": "api-contract",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_20_3",
+        "content": "This is a mock result 4 for query 'What is the expected...' containing some relevant content. summary",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_20_3",
+        "title": "Mock Document 20-3",
+        "module": "api-contract",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_20_4",
+        "content": "This is a mock result 5 for query 'What is the expected...' containing some relevant content. summary",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_20_4",
+        "title": "Mock Document 20-4",
+        "module": "api-contract",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.6666666666666667
+    },
+    "query_latency_ms": 272.5961208343506,
+    "expected_keywords": [
+      "summary",
+      "detailed_results",
+      "test_metadata"
+    ]
+  },
+  {
+    "query_id": "q022",
+    "query_text": "How does `pandas` facilitate metrics analysis in Python?",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_21_0",
+        "content": "This is a mock result 1 for query 'How does `pandas` fa...' containing some relevant content. DataFrame",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_21_0",
+        "title": "Mock Document 21-0",
+        "module": "pandas",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_21_1",
+        "content": "This is a mock result 2 for query 'How does `pandas` fa...' containing some relevant content. DataFrame",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_21_1",
+        "title": "Mock Document 21-1",
+        "module": "pandas",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_21_2",
+        "content": "This is a mock result 3 for query 'How does `pandas` fa...' containing some relevant content. DataFrame",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_21_2",
+        "title": "Mock Document 21-2",
+        "module": "pandas",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_21_3",
+        "content": "This is a mock result 4 for query 'How does `pandas` fa...' containing some relevant content. DataFrame",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_21_3",
+        "title": "Mock Document 21-3",
+        "module": "pandas",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_21_4",
+        "content": "This is a mock result 5 for query 'How does `pandas` fa...' containing some relevant content. DataFrame",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_21_4",
+        "title": "Mock Document 21-4",
+        "module": "pandas",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.6666666666666667
+    },
+    "query_latency_ms": 259.5653533935547,
+    "expected_keywords": [
+      "DataFrame",
+      "data manipulation",
+      "statistical analysis"
+    ]
+  },
+  {
+    "query_id": "q023",
+    "query_text": "What are the advantages of using Cohere's embed-english-v3.0 model for text embeddings?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_22_0",
+        "content": "This is a mock result 1 for query 'What are the advanta...' containing some relevant content. multilingual",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_22_0",
+        "title": "Mock Document 22-0",
+        "module": "cohere",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_22_1",
+        "content": "This is a mock result 2 for query 'What are the advanta...' containing some relevant content. multilingual",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_22_1",
+        "title": "Mock Document 22-1",
+        "module": "cohere",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_22_2",
+        "content": "This is a mock result 3 for query 'What are the advanta...' containing some relevant content. multilingual",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_22_2",
+        "title": "Mock Document 22-2",
+        "module": "cohere",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_22_3",
+        "content": "This is a mock result 4 for query 'What are the advanta...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_22_3",
+        "title": "Mock Document 22-3",
+        "module": "cohere",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_22_4",
+        "content": "This is a mock result 5 for query 'What are the advanta...' containing some relevant content. multilingual",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_22_4",
+        "title": "Mock Document 22-4",
+        "module": "cohere",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 268.40806007385254,
+    "expected_keywords": [
+      "multilingual",
+      "performance",
+      "accuracy",
+      "size"
+    ]
+  },
+  {
+    "query_id": "q024",
+    "query_text": "Compare the performance characteristics of different embedding models available in Cohere.",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_23_0",
+        "content": "This is a mock result 1 for query 'Compare the performa...' containing some relevant content. speed",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_23_0",
+        "title": "Mock Document 23-0",
+        "module": "cohere",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_23_1",
+        "content": "This is a mock result 2 for query 'Compare the performa...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_23_1",
+        "title": "Mock Document 23-1",
+        "module": "cohere",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_23_2",
+        "content": "This is a mock result 3 for query 'Compare the performa...' containing some relevant content. speed",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_23_2",
+        "title": "Mock Document 23-2",
+        "module": "cohere",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_23_3",
+        "content": "This is a mock result 4 for query 'Compare the performa...' containing some relevant content. speed",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_23_3",
+        "title": "Mock Document 23-3",
+        "module": "cohere",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_23_4",
+        "content": "This is a mock result 5 for query 'Compare the performa...' containing some relevant content. speed",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_23_4",
+        "title": "Mock Document 23-4",
+        "module": "cohere",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 258.8181495666504,
+    "expected_keywords": [
+      "speed",
+      "accuracy",
+      "size",
+      "cost"
+    ]
+  },
+  {
+    "query_id": "q025",
+    "query_text": "How do you handle API rate limiting when making calls to Cohere's embedding service?",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_24_0",
+        "content": "This is a mock result 1 for query 'How do you handle AP...' containing some relevant content. rate limiting",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_24_0",
+        "title": "Mock Document 24-0",
+        "module": "cohere",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_24_1",
+        "content": "This is a mock result 2 for query 'How do you handle AP...' containing some relevant content. rate limiting",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_24_1",
+        "title": "Mock Document 24-1",
+        "module": "cohere",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_24_2",
+        "content": "This is a mock result 3 for query 'How do you handle AP...' containing some relevant content. rate limiting",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_24_2",
+        "title": "Mock Document 24-2",
+        "module": "cohere",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_24_3",
+        "content": "This is a mock result 4 for query 'How do you handle AP...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_24_3",
+        "title": "Mock Document 24-3",
+        "module": "cohere",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_24_4",
+        "content": "This is a mock result 5 for query 'How do you handle AP...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_24_4",
+        "title": "Mock Document 24-4",
+        "module": "cohere",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 261.54470443725586,
+    "expected_keywords": [
+      "rate limiting",
+      "exponential backoff",
+      "batching",
+      "retry logic"
+    ]
+  },
+  {
+    "query_id": "q026",
+    "query_text": "What are the main differences between Qdrant and other vector databases like Pinecone or Weaviate?",
+    "category": "factual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_25_0",
+        "content": "This is a mock result 1 for query 'What are the main di...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_25_0",
+        "title": "Mock Document 25-0",
+        "module": "qdrant",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_25_1",
+        "content": "This is a mock result 2 for query 'What are the main di...' containing some relevant content. open-source",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_25_1",
+        "title": "Mock Document 25-1",
+        "module": "qdrant",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_25_2",
+        "content": "This is a mock result 3 for query 'What are the main di...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_25_2",
+        "title": "Mock Document 25-2",
+        "module": "qdrant",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_25_3",
+        "content": "This is a mock result 4 for query 'What are the main di...' containing some relevant content. open-source",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_25_3",
+        "title": "Mock Document 25-3",
+        "module": "qdrant",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_25_4",
+        "content": "This is a mock result 5 for query 'What are the main di...' containing some relevant content. open-source",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_25_4",
+        "title": "Mock Document 25-4",
+        "module": "qdrant",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 270.7171440124512,
+    "expected_keywords": [
+      "open-source",
+      "performance",
+      "features",
+      "pricing"
+    ]
+  },
+  {
+    "query_id": "q027",
+    "query_text": "Explain how HNSW (Hierarchical Navigable Small World) graphs improve vector search performance.",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_26_0",
+        "content": "This is a mock result 1 for query 'Explain how HNSW (Hi...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_26_0",
+        "title": "Mock Document 26-0",
+        "module": "qdrant",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_26_1",
+        "content": "This is a mock result 2 for query 'Explain how HNSW (Hi...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_26_1",
+        "title": "Mock Document 26-1",
+        "module": "qdrant",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_26_2",
+        "content": "This is a mock result 3 for query 'Explain how HNSW (Hi...' containing some relevant content. approximate nearest neighbor",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_26_2",
+        "title": "Mock Document 26-2",
+        "module": "qdrant",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_26_3",
+        "content": "This is a mock result 4 for query 'Explain how HNSW (Hi...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_26_3",
+        "title": "Mock Document 26-3",
+        "module": "qdrant",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_26_4",
+        "content": "This is a mock result 5 for query 'Explain how HNSW (Hi...' containing some relevant content. approximate nearest neighbor",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_26_4",
+        "title": "Mock Document 26-4",
+        "module": "qdrant",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.3333333333333333,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.5
+    },
+    "query_latency_ms": 265.0446891784668,
+    "expected_keywords": [
+      "approximate nearest neighbor",
+      "graph traversal",
+      "indexing",
+      "recall"
+    ]
+  },
+  {
+    "query_id": "q028",
+    "query_text": "Write a Python function to connect to Qdrant Cloud using the Python client.",
+    "category": "code",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_27_0",
+        "content": "This is a mock result 1 for query 'Write a Python funct...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_27_0",
+        "title": "Mock Document 27-0",
+        "module": "qdrant",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_27_1",
+        "content": "This is a mock result 2 for query 'Write a Python funct...' containing some relevant content. QdrantClient",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_27_1",
+        "title": "Mock Document 27-1",
+        "module": "qdrant",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_27_2",
+        "content": "This is a mock result 3 for query 'Write a Python funct...' containing some relevant content. QdrantClient",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_27_2",
+        "title": "Mock Document 27-2",
+        "module": "qdrant",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_27_3",
+        "content": "This is a mock result 4 for query 'Write a Python funct...' containing some relevant content. QdrantClient",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_27_3",
+        "title": "Mock Document 27-3",
+        "module": "qdrant",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_27_4",
+        "content": "This is a mock result 5 for query 'Write a Python funct...' containing some relevant content. QdrantClient",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_27_4",
+        "title": "Mock Document 27-4",
+        "module": "qdrant",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 284.96289253234863,
+    "expected_keywords": [
+      "QdrantClient",
+      "url",
+      "api_key",
+      "host"
+    ]
+  },
+  {
+    "query_id": "q029",
+    "query_text": "Implement a Python function that creates a collection in Qdrant with specific vector dimensions.",
+    "category": "code",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_28_0",
+        "content": "This is a mock result 1 for query 'Implement a Python f...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_28_0",
+        "title": "Mock Document 28-0",
+        "module": "qdrant",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_28_1",
+        "content": "This is a mock result 2 for query 'Implement a Python f...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_28_1",
+        "title": "Mock Document 28-1",
+        "module": "qdrant",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_28_2",
+        "content": "This is a mock result 3 for query 'Implement a Python f...' containing some relevant content. create_collection",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_28_2",
+        "title": "Mock Document 28-2",
+        "module": "qdrant",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_28_3",
+        "content": "This is a mock result 4 for query 'Implement a Python f...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_28_3",
+        "title": "Mock Document 28-3",
+        "module": "qdrant",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_28_4",
+        "content": "This is a mock result 5 for query 'Implement a Python f...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_28_4",
+        "title": "Mock Document 28-4",
+        "module": "qdrant",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.25
+    },
+    "query_latency_ms": 263.946533203125,
+    "expected_keywords": [
+      "create_collection",
+      "vector_size",
+      "distance",
+      "config"
+    ]
+  },
+  {
+    "query_id": "q030",
+    "query_text": "Show how to use LangChain's RecursiveCharacterTextSplitter for document chunking.",
+    "category": "code",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_29_0",
+        "content": "This is a mock result 1 for query 'Show how to use Lang...' containing some relevant content. RecursiveCharacterTextSplitter",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_29_0",
+        "title": "Mock Document 29-0",
+        "module": "langchain",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_29_1",
+        "content": "This is a mock result 2 for query 'Show how to use Lang...' containing some relevant content. RecursiveCharacterTextSplitter",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_29_1",
+        "title": "Mock Document 29-1",
+        "module": "langchain",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_29_2",
+        "content": "This is a mock result 3 for query 'Show how to use Lang...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_29_2",
+        "title": "Mock Document 29-2",
+        "module": "langchain",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_29_3",
+        "content": "This is a mock result 4 for query 'Show how to use Lang...' containing some relevant content. RecursiveCharacterTextSplitter",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_29_3",
+        "title": "Mock Document 29-3",
+        "module": "langchain",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_29_4",
+        "content": "This is a mock result 5 for query 'Show how to use Lang...' containing some relevant content. RecursiveCharacterTextSplitter",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_29_4",
+        "title": "Mock Document 29-4",
+        "module": "langchain",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 267.1341896057129,
+    "expected_keywords": [
+      "RecursiveCharacterTextSplitter",
+      "chunk_size",
+      "chunk_overlap",
+      "separators"
+    ]
+  },
+  {
+    "query_id": "q031",
+    "query_text": "What is the optimal chunk size for RAG systems and why?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_30_0",
+        "content": "This is a mock result 1 for query 'What is the optimal ...' containing some relevant content. context window",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_30_0",
+        "title": "Mock Document 30-0",
+        "module": "rag",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_30_1",
+        "content": "This is a mock result 2 for query 'What is the optimal ...' containing some relevant content. context window",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_30_1",
+        "title": "Mock Document 30-1",
+        "module": "rag",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_30_2",
+        "content": "This is a mock result 3 for query 'What is the optimal ...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_30_2",
+        "title": "Mock Document 30-2",
+        "module": "rag",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_30_3",
+        "content": "This is a mock result 4 for query 'What is the optimal ...' containing some relevant content. context window",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_30_3",
+        "title": "Mock Document 30-3",
+        "module": "rag",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_30_4",
+        "content": "This is a mock result 5 for query 'What is the optimal ...' containing some relevant content. context window",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_30_4",
+        "title": "Mock Document 30-4",
+        "module": "rag",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 272.9001045227051,
+    "expected_keywords": [
+      "context window",
+      "semantic coherence",
+      "information density",
+      "performance"
+    ]
+  },
+  {
+    "query_id": "q032",
+    "query_text": "How do you evaluate the quality of retrieved documents in a RAG system?",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_31_0",
+        "content": "This is a mock result 1 for query 'How do you evaluate ...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_31_0",
+        "title": "Mock Document 31-0",
+        "module": "rag",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_31_1",
+        "content": "This is a mock result 2 for query 'How do you evaluate ...' containing some relevant content. relevance",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_31_1",
+        "title": "Mock Document 31-1",
+        "module": "rag",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_31_2",
+        "content": "This is a mock result 3 for query 'How do you evaluate ...' containing some relevant content. relevance",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_31_2",
+        "title": "Mock Document 31-2",
+        "module": "rag",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_31_3",
+        "content": "This is a mock result 4 for query 'How do you evaluate ...' containing some relevant content. relevance",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_31_3",
+        "title": "Mock Document 31-3",
+        "module": "rag",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_31_4",
+        "content": "This is a mock result 5 for query 'How do you evaluate ...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_31_4",
+        "title": "Mock Document 31-4",
+        "module": "rag",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.6
+    },
+    "query_latency_ms": 264.4045352935791,
+    "expected_keywords": [
+      "relevance",
+      "accuracy",
+      "MRR",
+      "precision",
+      "recall"
+    ]
+  },
+  {
+    "query_id": "q033",
+    "query_text": "Explain the difference between semantic search and keyword-based search.",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_32_0",
+        "content": "This is a mock result 1 for query 'Explain the differen...' containing some relevant content. meaning",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_32_0",
+        "title": "Mock Document 32-0",
+        "module": "search",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_32_1",
+        "content": "This is a mock result 2 for query 'Explain the differen...' containing some relevant content. meaning",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_32_1",
+        "title": "Mock Document 32-1",
+        "module": "search",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_32_2",
+        "content": "This is a mock result 3 for query 'Explain the differen...' containing some relevant content. meaning",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_32_2",
+        "title": "Mock Document 32-2",
+        "module": "search",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_32_3",
+        "content": "This is a mock result 4 for query 'Explain the differen...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_32_3",
+        "title": "Mock Document 32-3",
+        "module": "search",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_32_4",
+        "content": "This is a mock result 5 for query 'Explain the differen...' containing some relevant content. meaning",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_32_4",
+        "title": "Mock Document 32-4",
+        "module": "search",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 271.24857902526855,
+    "expected_keywords": [
+      "meaning",
+      "context",
+      "vector embeddings",
+      "understanding"
+    ]
+  },
+  {
+    "query_id": "q034",
+    "query_text": "What is the purpose of chunk overlap in document processing?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_33_0",
+        "content": "This is a mock result 1 for query 'What is the purpose ...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_33_0",
+        "title": "Mock Document 33-0",
+        "module": "document-processing",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_33_1",
+        "content": "This is a mock result 2 for query 'What is the purpose ...' containing some relevant content. context continuity",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_33_1",
+        "title": "Mock Document 33-1",
+        "module": "document-processing",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_33_2",
+        "content": "This is a mock result 3 for query 'What is the purpose ...' containing some relevant content. context continuity",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_33_2",
+        "title": "Mock Document 33-2",
+        "module": "document-processing",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_33_3",
+        "content": "This is a mock result 4 for query 'What is the purpose ...' containing some relevant content. context continuity",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_33_3",
+        "title": "Mock Document 33-3",
+        "module": "document-processing",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_33_4",
+        "content": "This is a mock result 5 for query 'What is the purpose ...' containing some relevant content. context continuity",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_33_4",
+        "title": "Mock Document 33-4",
+        "module": "document-processing",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 261.5771293640137,
+    "expected_keywords": [
+      "context continuity",
+      "boundary issues",
+      "semantic coherence",
+      "information preservation"
+    ]
+  },
+  {
+    "query_id": "q035",
+    "query_text": "How does Playwright differ from Selenium for web scraping?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_34_0",
+        "content": "This is a mock result 1 for query 'How does Playwright ...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_34_0",
+        "title": "Mock Document 34-0",
+        "module": "web-scraping",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_34_1",
+        "content": "This is a mock result 2 for query 'How does Playwright ...' containing some relevant content. JavaScript rendering",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_34_1",
+        "title": "Mock Document 34-1",
+        "module": "web-scraping",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_34_2",
+        "content": "This is a mock result 3 for query 'How does Playwright ...' containing some relevant content. JavaScript rendering",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_34_2",
+        "title": "Mock Document 34-2",
+        "module": "web-scraping",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_34_3",
+        "content": "This is a mock result 4 for query 'How does Playwright ...' containing some relevant content. JavaScript rendering",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_34_3",
+        "title": "Mock Document 34-3",
+        "module": "web-scraping",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_34_4",
+        "content": "This is a mock result 5 for query 'How does Playwright ...' containing some relevant content. JavaScript rendering",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_34_4",
+        "title": "Mock Document 34-4",
+        "module": "web-scraping",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 261.22546195983887,
+    "expected_keywords": [
+      "JavaScript rendering",
+      "async support",
+      "browser automation",
+      "reliability"
+    ]
+  },
+  {
+    "query_id": "q036",
+    "query_text": "Write a Python function that uses Playwright to scrape content from a dynamic website.",
+    "category": "code",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_35_0",
+        "content": "This is a mock result 1 for query 'Write a Python funct...' containing some relevant content. async",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_35_0",
+        "title": "Mock Document 35-0",
+        "module": "web-scraping",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_35_1",
+        "content": "This is a mock result 2 for query 'Write a Python funct...' containing some relevant content. async",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_35_1",
+        "title": "Mock Document 35-1",
+        "module": "web-scraping",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_35_2",
+        "content": "This is a mock result 3 for query 'Write a Python funct...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_35_2",
+        "title": "Mock Document 35-2",
+        "module": "web-scraping",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_35_3",
+        "content": "This is a mock result 4 for query 'Write a Python funct...' containing some relevant content. async",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_35_3",
+        "title": "Mock Document 35-3",
+        "module": "web-scraping",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_35_4",
+        "content": "This is a mock result 5 for query 'Write a Python funct...' containing some relevant content. async",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_35_4",
+        "title": "Mock Document 35-4",
+        "module": "web-scraping",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 272.5951671600342,
+    "expected_keywords": [
+      "async",
+      "page.goto",
+      "page.content",
+      "wait_for_load_state"
+    ]
+  },
+  {
+    "query_id": "q037",
+    "query_text": "What are the benefits of using poetry over pip for dependency management?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_36_0",
+        "content": "This is a mock result 1 for query 'What are the benefit...' containing some relevant content. lock files",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_36_0",
+        "title": "Mock Document 36-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_36_1",
+        "content": "This is a mock result 2 for query 'What are the benefit...' containing some relevant content. lock files",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_36_1",
+        "title": "Mock Document 36-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_36_2",
+        "content": "This is a mock result 3 for query 'What are the benefit...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_36_2",
+        "title": "Mock Document 36-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_36_3",
+        "content": "This is a mock result 4 for query 'What are the benefit...' containing some relevant content. lock files",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_36_3",
+        "title": "Mock Document 36-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_36_4",
+        "content": "This is a mock result 5 for query 'What are the benefit...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_36_4",
+        "title": "Mock Document 36-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 263.29612731933594,
+    "expected_keywords": [
+      "lock files",
+      "virtual environments",
+      "dependency resolution",
+      "reproducibility"
+    ]
+  },
+  {
+    "query_id": "q038",
+    "query_text": "Explain how to implement retry logic with exponential backoff in Python.",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_37_0",
+        "content": "This is a mock result 1 for query 'Explain how to imple...' containing some relevant content. decorator",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_37_0",
+        "title": "Mock Document 37-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_37_1",
+        "content": "This is a mock result 2 for query 'Explain how to imple...' containing some relevant content. decorator",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_37_1",
+        "title": "Mock Document 37-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_37_2",
+        "content": "This is a mock result 3 for query 'Explain how to imple...' containing some relevant content. decorator",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_37_2",
+        "title": "Mock Document 37-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_37_3",
+        "content": "This is a mock result 4 for query 'Explain how to imple...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_37_3",
+        "title": "Mock Document 37-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_37_4",
+        "content": "This is a mock result 5 for query 'Explain how to imple...' containing some relevant content. decorator",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_37_4",
+        "title": "Mock Document 37-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 266.9484615325928,
+    "expected_keywords": [
+      "decorator",
+      "time.sleep",
+      "exception handling",
+      "jitter"
+    ]
+  },
+  {
+    "query_id": "q039",
+    "query_text": "How do you implement a batch processing system in Python?",
+    "category": "code",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_38_0",
+        "content": "This is a mock result 1 for query 'How do you implement...' containing some relevant content. chunking",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_38_0",
+        "title": "Mock Document 38-0",
+        "module": "python",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_38_1",
+        "content": "This is a mock result 2 for query 'How do you implement...' containing some relevant content. chunking",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_38_1",
+        "title": "Mock Document 38-1",
+        "module": "python",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_38_2",
+        "content": "This is a mock result 3 for query 'How do you implement...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_38_2",
+        "title": "Mock Document 38-2",
+        "module": "python",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_38_3",
+        "content": "This is a mock result 4 for query 'How do you implement...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_38_3",
+        "title": "Mock Document 38-3",
+        "module": "python",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_38_4",
+        "content": "This is a mock result 5 for query 'How do you implement...' containing some relevant content. chunking",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_38_4",
+        "title": "Mock Document 38-4",
+        "module": "python",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 276.092529296875,
+    "expected_keywords": [
+      "chunking",
+      "generators",
+      "concurrency",
+      "memory management"
+    ]
+  },
+  {
+    "query_id": "q040",
+    "query_text": "What are the best practices for securing API keys in Python applications?",
+    "category": "factual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_39_0",
+        "content": "This is a mock result 1 for query 'What are the best pr...' containing some relevant content. environment variables",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_39_0",
+        "title": "Mock Document 39-0",
+        "module": "security",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_39_1",
+        "content": "This is a mock result 2 for query 'What are the best pr...' containing some relevant content. environment variables",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_39_1",
+        "title": "Mock Document 39-1",
+        "module": "security",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_39_2",
+        "content": "This is a mock result 3 for query 'What are the best pr...' containing some relevant content. environment variables",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_39_2",
+        "title": "Mock Document 39-2",
+        "module": "security",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_39_3",
+        "content": "This is a mock result 4 for query 'What are the best pr...' containing some relevant content. environment variables",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_39_3",
+        "title": "Mock Document 39-3",
+        "module": "security",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_39_4",
+        "content": "This is a mock result 5 for query 'What are the best pr...' containing some relevant content. environment variables",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_39_4",
+        "title": "Mock Document 39-4",
+        "module": "security",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.25
+    },
+    "query_latency_ms": 268.0320739746094,
+    "expected_keywords": [
+      "environment variables",
+      "encryption",
+      "secrets management",
+      "least privilege"
+    ]
+  },
+  {
+    "query_id": "q041",
+    "query_text": "In the 'ROS2 Course Module', what is the purpose of the launch system?",
+    "category": "module-specific",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_40_0",
+        "content": "This is a mock result 1 for query 'In the 'ROS2 Course ...' containing some relevant content. launch files",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_40_0",
+        "title": "Mock Document 40-0",
+        "module": "ros2-course-module",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_40_1",
+        "content": "This is a mock result 2 for query 'In the 'ROS2 Course ...' containing some relevant content. launch files",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_40_1",
+        "title": "Mock Document 40-1",
+        "module": "ros2-course-module",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_40_2",
+        "content": "This is a mock result 3 for query 'In the 'ROS2 Course ...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_40_2",
+        "title": "Mock Document 40-2",
+        "module": "ros2-course-module",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_40_3",
+        "content": "This is a mock result 4 for query 'In the 'ROS2 Course ...' containing some relevant content. launch files",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_40_3",
+        "title": "Mock Document 40-3",
+        "module": "ros2-course-module",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_40_4",
+        "content": "This is a mock result 5 for query 'In the 'ROS2 Course ...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_40_4",
+        "title": "Mock Document 40-4",
+        "module": "ros2-course-module",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 259.3069076538086,
+    "expected_keywords": [
+      "launch files",
+      "node composition",
+      "system orchestration",
+      "parameter management"
+    ]
+  },
+  {
+    "query_id": "q042",
+    "query_text": "According to the 'Documentation Standards' module, what makes effective technical documentation?",
+    "category": "module-specific",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_41_0",
+        "content": "This is a mock result 1 for query 'According to the 'Do...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_41_0",
+        "title": "Mock Document 41-0",
+        "module": "documentation-standards",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_41_1",
+        "content": "This is a mock result 2 for query 'According to the 'Do...' containing some relevant content. audience",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_41_1",
+        "title": "Mock Document 41-1",
+        "module": "documentation-standards",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_41_2",
+        "content": "This is a mock result 3 for query 'According to the 'Do...' containing some relevant content. audience",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_41_2",
+        "title": "Mock Document 41-2",
+        "module": "documentation-standards",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_41_3",
+        "content": "This is a mock result 4 for query 'According to the 'Do...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_41_3",
+        "title": "Mock Document 41-3",
+        "module": "documentation-standards",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_41_4",
+        "content": "This is a mock result 5 for query 'According to the 'Do...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_41_4",
+        "title": "Mock Document 41-4",
+        "module": "documentation-standards",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.5
+    },
+    "query_latency_ms": 259.4566345214844,
+    "expected_keywords": [
+      "audience",
+      "clarity",
+      "examples",
+      "maintenance"
+    ]
+  },
+  {
+    "query_id": "q043",
+    "query_text": "In the 'System Architecture' module, how is microservice communication typically handled?",
+    "category": "module-specific",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_42_0",
+        "content": "This is a mock result 1 for query 'In the 'System Archi...' containing some relevant content. REST APIs",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_42_0",
+        "title": "Mock Document 42-0",
+        "module": "system-architecture",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_42_1",
+        "content": "This is a mock result 2 for query 'In the 'System Archi...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_42_1",
+        "title": "Mock Document 42-1",
+        "module": "system-architecture",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_42_2",
+        "content": "This is a mock result 3 for query 'In the 'System Archi...' containing some relevant content. REST APIs",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_42_2",
+        "title": "Mock Document 42-2",
+        "module": "system-architecture",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_42_3",
+        "content": "This is a mock result 4 for query 'In the 'System Archi...' containing some relevant content. REST APIs",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_42_3",
+        "title": "Mock Document 42-3",
+        "module": "system-architecture",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_42_4",
+        "content": "This is a mock result 5 for query 'In the 'System Archi...' containing some relevant content. REST APIs",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_42_4",
+        "title": "Mock Document 42-4",
+        "module": "system-architecture",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 266.9222354888916,
+    "expected_keywords": [
+      "REST APIs",
+      "message queues",
+      "gRPC",
+      "event streaming"
+    ]
+  },
+  {
+    "query_id": "q044",
+    "query_text": "Within the 'Testing Framework' module, what are the key components of a comprehensive test strategy?",
+    "category": "module-specific",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_43_0",
+        "content": "This is a mock result 1 for query 'Within the 'Testing ...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_43_0",
+        "title": "Mock Document 43-0",
+        "module": "testing-framework",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_43_1",
+        "content": "This is a mock result 2 for query 'Within the 'Testing ...' containing some relevant content. unit tests",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_43_1",
+        "title": "Mock Document 43-1",
+        "module": "testing-framework",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_43_2",
+        "content": "This is a mock result 3 for query 'Within the 'Testing ...' containing some relevant content. unit tests",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_43_2",
+        "title": "Mock Document 43-2",
+        "module": "testing-framework",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_43_3",
+        "content": "This is a mock result 4 for query 'Within the 'Testing ...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_43_3",
+        "title": "Mock Document 43-3",
+        "module": "testing-framework",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_43_4",
+        "content": "This is a mock result 5 for query 'Within the 'Testing ...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_43_4",
+        "title": "Mock Document 43-4",
+        "module": "testing-framework",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.5
+    },
+    "query_latency_ms": 269.04940605163574,
+    "expected_keywords": [
+      "unit tests",
+      "integration tests",
+      "end-to-end tests",
+      "performance tests"
+    ]
+  },
+  {
+    "query_id": "q045",
+    "query_text": "From the 'Performance Optimization' module, what are the most common bottlenecks in RAG systems?",
+    "category": "module-specific",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_44_0",
+        "content": "This is a mock result 1 for query 'From the 'Performanc...' containing some relevant content. embedding generation",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_44_0",
+        "title": "Mock Document 44-0",
+        "module": "performance-optimization",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_44_1",
+        "content": "This is a mock result 2 for query 'From the 'Performanc...' containing some relevant content. embedding generation",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_44_1",
+        "title": "Mock Document 44-1",
+        "module": "performance-optimization",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_44_2",
+        "content": "This is a mock result 3 for query 'From the 'Performanc...' containing some relevant content. embedding generation",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_44_2",
+        "title": "Mock Document 44-2",
+        "module": "performance-optimization",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_44_3",
+        "content": "This is a mock result 4 for query 'From the 'Performanc...' containing some relevant content. embedding generation",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_44_3",
+        "title": "Mock Document 44-3",
+        "module": "performance-optimization",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_44_4",
+        "content": "This is a mock result 5 for query 'From the 'Performanc...' containing some relevant content. embedding generation",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_44_4",
+        "title": "Mock Document 44-4",
+        "module": "performance-optimization",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.25
+    },
+    "query_latency_ms": 259.9444389343262,
+    "expected_keywords": [
+      "embedding generation",
+      "vector search",
+      "network latency",
+      "memory usage"
+    ]
+  },
+  {
+    "query_id": "q046",
+    "query_text": "What are the key considerations for deploying RAG systems in production?",
+    "category": "factual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_45_0",
+        "content": "This is a mock result 1 for query 'What are the key con...' containing some relevant content. scalability",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_45_0",
+        "title": "Mock Document 45-0",
+        "module": "production-deployment",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_45_1",
+        "content": "This is a mock result 2 for query 'What are the key con...' containing some relevant content. scalability",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_45_1",
+        "title": "Mock Document 45-1",
+        "module": "production-deployment",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_45_2",
+        "content": "This is a mock result 3 for query 'What are the key con...' containing some relevant content. scalability",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_45_2",
+        "title": "Mock Document 45-2",
+        "module": "production-deployment",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_45_3",
+        "content": "This is a mock result 4 for query 'What are the key con...' containing some relevant content. scalability",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_45_3",
+        "title": "Mock Document 45-3",
+        "module": "production-deployment",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_45_4",
+        "content": "This is a mock result 5 for query 'What are the key con...' containing some relevant content. scalability",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_45_4",
+        "title": "Mock Document 45-4",
+        "module": "production-deployment",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.25
+    },
+    "query_latency_ms": 265.55538177490234,
+    "expected_keywords": [
+      "scalability",
+      "monitoring",
+      "caching",
+      "error handling"
+    ]
+  },
+  {
+    "query_id": "q047",
+    "query_text": "How do you measure the effectiveness of a RAG system compared to a traditional retrieval system?",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_46_0",
+        "content": "This is a mock result 1 for query 'How do you measure t...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_46_0",
+        "title": "Mock Document 46-0",
+        "module": "evaluation",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_46_1",
+        "content": "This is a mock result 2 for query 'How do you measure t...' containing some relevant content. accuracy",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_46_1",
+        "title": "Mock Document 46-1",
+        "module": "evaluation",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_46_2",
+        "content": "This is a mock result 3 for query 'How do you measure t...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_46_2",
+        "title": "Mock Document 46-2",
+        "module": "evaluation",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_46_3",
+        "content": "This is a mock result 4 for query 'How do you measure t...' containing some relevant content. accuracy",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_46_3",
+        "title": "Mock Document 46-3",
+        "module": "evaluation",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_46_4",
+        "content": "This is a mock result 5 for query 'How do you measure t...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_46_4",
+        "title": "Mock Document 46-4",
+        "module": "evaluation",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.5
+    },
+    "query_latency_ms": 268.5513496398926,
+    "expected_keywords": [
+      "accuracy",
+      "latency",
+      "user satisfaction",
+      "coverage"
+    ]
+  },
+  {
+    "query_id": "q048",
+    "query_text": "Implement a function to calculate the Mean Reciprocal Rank (MRR) for evaluation metrics.",
+    "category": "code",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_47_0",
+        "content": "This is a mock result 1 for query 'Implement a function...' containing some relevant content. reciprocal rank",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_47_0",
+        "title": "Mock Document 47-0",
+        "module": "evaluation-metrics",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_47_1",
+        "content": "This is a mock result 2 for query 'Implement a function...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_47_1",
+        "title": "Mock Document 47-1",
+        "module": "evaluation-metrics",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_47_2",
+        "content": "This is a mock result 3 for query 'Implement a function...' containing some relevant content. reciprocal rank",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_47_2",
+        "title": "Mock Document 47-2",
+        "module": "evaluation-metrics",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_47_3",
+        "content": "This is a mock result 4 for query 'Implement a function...' containing some relevant content. reciprocal rank",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_47_3",
+        "title": "Mock Document 47-3",
+        "module": "evaluation-metrics",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_47_4",
+        "content": "This is a mock result 5 for query 'Implement a function...' containing some relevant content. reciprocal rank",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_47_4",
+        "title": "Mock Document 47-4",
+        "module": "evaluation-metrics",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0
+    },
+    "query_latency_ms": 262.24231719970703,
+    "expected_keywords": [
+      "reciprocal rank",
+      "first relevant",
+      "ranking evaluation",
+      "mean"
+    ]
+  },
+  {
+    "query_id": "q049",
+    "query_text": "Write a Python function to calculate Precision@K and Recall@K metrics.",
+    "category": "code",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_48_0",
+        "content": "This is a mock result 1 for query 'Write a Python funct...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_48_0",
+        "title": "Mock Document 48-0",
+        "module": "evaluation-metrics",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_48_1",
+        "content": "This is a mock result 2 for query 'Write a Python funct...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_48_1",
+        "title": "Mock Document 48-1",
+        "module": "evaluation-metrics",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_48_2",
+        "content": "This is a mock result 3 for query 'Write a Python funct...' containing some relevant content. precision",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_48_2",
+        "title": "Mock Document 48-2",
+        "module": "evaluation-metrics",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_48_3",
+        "content": "This is a mock result 4 for query 'Write a Python funct...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_48_3",
+        "title": "Mock Document 48-3",
+        "module": "evaluation-metrics",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_48_4",
+        "content": "This is a mock result 5 for query 'Write a Python funct...' containing some relevant content. precision",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_48_4",
+        "title": "Mock Document 48-4",
+        "module": "evaluation-metrics",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.3333333333333333,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.5
+    },
+    "query_latency_ms": 266.74413681030273,
+    "expected_keywords": [
+      "precision",
+      "recall",
+      "top-k",
+      "relevant documents"
+    ]
+  },
+  {
+    "query_id": "q050",
+    "query_text": "What factors influence the choice of K in Precision@K and Recall@K metrics?",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_49_0",
+        "content": "This is a mock result 1 for query 'What factors influen...' containing some relevant content. use case",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_49_0",
+        "title": "Mock Document 49-0",
+        "module": "evaluation-metrics",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_49_1",
+        "content": "This is a mock result 2 for query 'What factors influen...' containing some relevant content. use case",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_49_1",
+        "title": "Mock Document 49-1",
+        "module": "evaluation-metrics",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_49_2",
+        "content": "This is a mock result 3 for query 'What factors influen...' containing some relevant content. use case",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_49_2",
+        "title": "Mock Document 49-2",
+        "module": "evaluation-metrics",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_49_3",
+        "content": "This is a mock result 4 for query 'What factors influen...' containing some relevant content. use case",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_49_3",
+        "title": "Mock Document 49-3",
+        "module": "evaluation-metrics",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_49_4",
+        "content": "This is a mock result 5 for query 'What factors influen...' containing some relevant content. use case",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_49_4",
+        "title": "Mock Document 49-4",
+        "module": "evaluation-metrics",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.25
+    },
+    "query_latency_ms": 267.43125915527344,
+    "expected_keywords": [
+      "use case",
+      "application requirements",
+      "user behavior",
+      "trade-offs"
+    ]
+  },
+  {
+    "query_id": "q051",
+    "query_text": "Explain how to implement a comprehensive logging system in Python for debugging.",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_50_0",
+        "content": "This is a mock result 1 for query 'Explain how to imple...' containing some relevant content. logging levels",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_50_0",
+        "title": "Mock Document 50-0",
+        "module": "debugging-tools",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_50_1",
+        "content": "This is a mock result 2 for query 'Explain how to imple...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_50_1",
+        "title": "Mock Document 50-1",
+        "module": "debugging-tools",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_50_2",
+        "content": "This is a mock result 3 for query 'Explain how to imple...' containing some relevant content. logging levels",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_50_2",
+        "title": "Mock Document 50-2",
+        "module": "debugging-tools",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_50_3",
+        "content": "This is a mock result 4 for query 'Explain how to imple...' containing some relevant content. logging levels",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_50_3",
+        "title": "Mock Document 50-3",
+        "module": "debugging-tools",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_50_4",
+        "content": "This is a mock result 5 for query 'Explain how to imple...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_50_4",
+        "title": "Mock Document 50-4",
+        "module": "debugging-tools",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 270.3423500061035,
+    "expected_keywords": [
+      "logging levels",
+      "handlers",
+      "formatters",
+      "structured logging"
+    ]
+  },
+  {
+    "query_id": "q052",
+    "query_text": "What are the key differences between various vector similarity measures?",
+    "category": "factual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_51_0",
+        "content": "This is a mock result 1 for query 'What are the key dif...' containing some relevant content. cosine similarity",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_51_0",
+        "title": "Mock Document 51-0",
+        "module": "mathematics",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_51_1",
+        "content": "This is a mock result 2 for query 'What are the key dif...' containing some relevant content. cosine similarity",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_51_1",
+        "title": "Mock Document 51-1",
+        "module": "mathematics",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_51_2",
+        "content": "This is a mock result 3 for query 'What are the key dif...' containing some relevant content. cosine similarity",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_51_2",
+        "title": "Mock Document 51-2",
+        "module": "mathematics",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_51_3",
+        "content": "This is a mock result 4 for query 'What are the key dif...' containing some relevant content. cosine similarity",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_51_3",
+        "title": "Mock Document 51-3",
+        "module": "mathematics",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_51_4",
+        "content": "This is a mock result 5 for query 'What are the key dif...' containing some relevant content. cosine similarity",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_51_4",
+        "title": "Mock Document 51-4",
+        "module": "mathematics",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.25
+    },
+    "query_latency_ms": 428.96509170532227,
+    "expected_keywords": [
+      "cosine similarity",
+      "euclidean distance",
+      "dot product",
+      "manhattan distance"
+    ]
+  },
+  {
+    "query_id": "q053",
+    "query_text": "How do you optimize the TOP_K parameter for different types of queries?",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_52_0",
+        "content": "This is a mock result 1 for query 'How do you optimize ...' containing some relevant content. query type",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_52_0",
+        "title": "Mock Document 52-0",
+        "module": "optimization",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_52_1",
+        "content": "This is a mock result 2 for query 'How do you optimize ...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_52_1",
+        "title": "Mock Document 52-1",
+        "module": "optimization",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_52_2",
+        "content": "This is a mock result 3 for query 'How do you optimize ...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_52_2",
+        "title": "Mock Document 52-2",
+        "module": "optimization",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_52_3",
+        "content": "This is a mock result 4 for query 'How do you optimize ...' containing some relevant content. query type",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_52_3",
+        "title": "Mock Document 52-3",
+        "module": "optimization",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_52_4",
+        "content": "This is a mock result 5 for query 'How do you optimize ...' containing some relevant content. query type",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_52_4",
+        "title": "Mock Document 52-4",
+        "module": "optimization",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 270.76029777526855,
+    "expected_keywords": [
+      "query type",
+      "precision vs recall",
+      "latency",
+      "relevance"
+    ]
+  },
+  {
+    "query_id": "q054",
+    "query_text": "What is the impact of similarity threshold on retrieval performance?",
+    "category": "conceptual",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_53_0",
+        "content": "This is a mock result 1 for query 'What is the impact o...' containing some relevant content.",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_53_0",
+        "title": "Mock Document 53-0",
+        "module": "optimization",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_53_1",
+        "content": "This is a mock result 2 for query 'What is the impact o...' containing some relevant content. precision",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_53_1",
+        "title": "Mock Document 53-1",
+        "module": "optimization",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_53_2",
+        "content": "This is a mock result 3 for query 'What is the impact o...' containing some relevant content. precision",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_53_2",
+        "title": "Mock Document 53-2",
+        "module": "optimization",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_53_3",
+        "content": "This is a mock result 4 for query 'What is the impact o...' containing some relevant content.",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_53_3",
+        "title": "Mock Document 53-3",
+        "module": "optimization",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_53_4",
+        "content": "This is a mock result 5 for query 'What is the impact o...' containing some relevant content.",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_53_4",
+        "title": "Mock Document 53-4",
+        "module": "optimization",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 0.5,
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.5
+    },
+    "query_latency_ms": 265.52724838256836,
+    "expected_keywords": [
+      "precision",
+      "recall",
+      "false positives",
+      "false negatives"
+    ]
+  },
+  {
+    "query_id": "q055",
+    "query_text": "Write a Python script to run batch retrieval tests and generate performance reports.",
+    "category": "code",
+    "difficulty": "hard",
+    "results": [
+      {
+        "chunk_id": "mock_chunk_54_0",
+        "content": "This is a mock result 1 for query 'Write a Python scrip...' containing some relevant content. batch processing",
+        "score": 0.9,
+        "source_url": "http://mock.example.com/doc_54_0",
+        "title": "Mock Document 54-0",
+        "module": "testing-tools",
+        "position": 1
+      },
+      {
+        "chunk_id": "mock_chunk_54_1",
+        "content": "This is a mock result 2 for query 'Write a Python scrip...' containing some relevant content.",
+        "score": 0.8,
+        "source_url": "http://mock.example.com/doc_54_1",
+        "title": "Mock Document 54-1",
+        "module": "testing-tools",
+        "position": 2
+      },
+      {
+        "chunk_id": "mock_chunk_54_2",
+        "content": "This is a mock result 3 for query 'Write a Python scrip...' containing some relevant content.",
+        "score": 0.7,
+        "source_url": "http://mock.example.com/doc_54_2",
+        "title": "Mock Document 54-2",
+        "module": "testing-tools",
+        "position": 3
+      },
+      {
+        "chunk_id": "mock_chunk_54_3",
+        "content": "This is a mock result 4 for query 'Write a Python scrip...' containing some relevant content. batch processing",
+        "score": 0.6,
+        "source_url": "http://mock.example.com/doc_54_3",
+        "title": "Mock Document 54-3",
+        "module": "testing-tools",
+        "position": 4
+      },
+      {
+        "chunk_id": "mock_chunk_54_4",
+        "content": "This is a mock result 5 for query 'Write a Python scrip...' containing some relevant content. batch processing",
+        "score": 0.5,
+        "source_url": "http://mock.example.com/doc_54_4",
+        "title": "Mock Document 54-4",
+        "module": "testing-tools",
+        "position": 5
+      }
+    ],
+    "metrics": {
+      "mrr": 1.0,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75
+    },
+    "query_latency_ms": 262.79592514038086,
+    "expected_keywords": [
+      "batch processing",
+      "timing",
+      "metrics aggregation",
+      "report generation"
     ]
   }
 ]
